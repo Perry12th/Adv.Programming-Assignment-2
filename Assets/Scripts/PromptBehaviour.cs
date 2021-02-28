@@ -39,5 +39,10 @@ public class PromptBehaviour : MonoBehaviour
                 gameRunning = true;
             }
         }
+
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit(0);
+        }
     }
 }
