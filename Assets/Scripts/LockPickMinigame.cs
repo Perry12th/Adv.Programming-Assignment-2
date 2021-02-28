@@ -244,6 +244,7 @@ public class LockPickMinigame : MonoBehaviour
     {
         StopAllCoroutines();
         timeLeft = startingTime;
+        TimerText.text = ((int)timeLeft).ToString();
         pickAngle = 0;
         state = GameState.SETTINGUP;
         LockpickLevelDropDown.interactable = true;
